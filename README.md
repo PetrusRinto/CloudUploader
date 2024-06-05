@@ -17,7 +17,7 @@ Also Google Cloud CLI needs to be downloaded
 This is my very first project.
 
 # Future upgrades
-Upload multiple files at once
-Add a progress bar
-Enable file synchronization --if the file already exists in the cloud I want to have the user overwrite, rename or skip.
+- Upload multiple files at once
+- Add a progress bar
+- Enable file synchronization --if the file already exists in the cloud I want to have the user overwrite, rename or skip.
 Integrate encryption
