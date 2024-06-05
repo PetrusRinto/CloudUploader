@@ -12,6 +12,8 @@ If you already have git you can download the Uploader with: "git clone https://u
 
 replace https://username/repository.git with the actual URL of this repository.
 
+Also Google Cloud CLI needs to be downloaded
+
 This is my very first project.
 
 # Future upgrades
