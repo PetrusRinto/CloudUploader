@@ -10,9 +10,16 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 # Adding the files to the user's $PATH
+sudo mkdir -p /usr/local/bin/gclouduploader
+sudo cp clouduploader.sh /usr/local/bin/gclouduploader
+sudo chmod +x /usr/local/bin/gclouduploader/clouduploader.sh
+sudo ln -s /usr/local/bin/gclouduploader/clouduploader.sh /usr/local/bin/clouduploader
 
-cp clouduploader.sh /usr/local/bin/clouduploader
-chmod +x /usr/local/bin/clouduploader
-mv /usr/local/bin/clouduploader/clouduploader.sh clouduploader
+if [[ ":$PATH:" != *":/usr/local/bin:"* ]]; then
+    echo "Adding /usr/local/bin to PATH"
+    echo 'export PATH=$PATH:/usr/local/bin' >> /etc/.bashrc
+    source /etc/.bashrc
+fi
 
-echo "Clouduploader has been installed to /usr/local/bin/clouduploader"
+
+echo "Install complete! You can now use command 'clouduploader'."
