@@ -11,6 +11,7 @@ fi
 
 # Adding the files to the user's $PATH
 
+mkdir /usr/local/bin/clouduploader
 cp clouduploader.sh /usr/local/bin/clouduploader
 chmod +x /usr/local/bin/clouduploader
 mv /usr/local/bin/clouduploader/clouduploader.sh clouduploader
