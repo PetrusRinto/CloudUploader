@@ -12,11 +12,12 @@ read -r gcloudpfrm
 # Creating a function to install gcloud SDK
 function gcloudinstall {
     curl https://sdk.cloud.google.com | bash
-    if [ #? -ne 0 ]; then
+    if [ $? -ne 0 ]; then
         echo "Failed to install gcloud SDK."
         exit 1
     fi
     echo 'export PATH=$PATH:$HOME/google-cloud-sdk/bin' >> ~/.bashrc
+    export PATH=$PATH:$HOME/google-cloud-sdk/bin
     source ~/.bashrc
 }
 
