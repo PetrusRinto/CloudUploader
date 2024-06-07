@@ -1,7 +1,7 @@
 # Introduction
 Hello world! 
 This is my first ever Cloud+Bash project which is the end of phase1 in the learntocloud.guide. This project emphasizes on making a script that can upload files to the Google Cloud.
-I have a 90 day free Google Cloud license which made this possible by test etc.
+I have a 90 day free Google Cloud license which made it possible to test, qualitycheck, troubleshooting etc.
 This script currently only works on Google Cloud.
 
 # CloudUploader to Google Cloud Storage
