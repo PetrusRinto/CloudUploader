@@ -17,8 +17,8 @@ sudo ln -s /usr/local/bin/gclouduploader/clouduploader.sh /usr/local/bin/cloudup
 
 if [[ ":$PATH:" != *":/usr/local/bin:"* ]]; then
     echo "Adding /usr/local/bin to PATH"
-    echo 'export PATH=$PATH:/usr/local/bin' >> /etc/.bashrc
-    source /etc/.bashrc
+    echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc
+    source ~/.bashrc
 fi
 
 
