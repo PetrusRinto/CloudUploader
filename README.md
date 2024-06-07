@@ -32,7 +32,10 @@ This will prompt you to enter where you stored the .json file and ask you for yo
 
 After you've provided this, you can sit back and let the script do it's thing. (remember to still keep your attention, because the script might want to prompt you some more later on the installation.)
 
-When the installation is complete you will see a message that lets you know this.
+When the installation is complete you will see a message stating it. It will also tell you to enter "gcloud init" in the terminal. So you can Authenticate. If you don't use a GUI Ubuntu/Debian distro, you need to copy the link to a browser and login.
+After you're logged in the terminal will update and display your email address.
+
+You will be provided with a list of options, and it's really up to you at this point.
 
 # How to Upload a file to the cloud
 When the installation is complete, you can finally Upload to your cloud.
