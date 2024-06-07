@@ -13,14 +13,14 @@ read -r gcloudpfrm
 function gcloudinstall {
     echo "Installing Google Cloud SDK..."
 
+    apt-get update
+    apt-get install -y curl gnupg lsb-release
+
     curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg
 
 # Adding Cloud SDK distro
     echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
-
-# Importing the Google Cloud key
-    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
-
+    
 # Updating and installing the SDK
     apt-get update && apt-get install -y google-cloud-sdk
 
