@@ -72,6 +72,7 @@ fi
 # Checking if the user already have logged into Google Cloud
 if gcloud auth list --filter=status:ACTIVE --format="value(account)" | grep -q "."; then
     echo "You are already logged in, running the setup.sh file..."
+    ./setup.sh
 else
     gcloud_auth
 fi
