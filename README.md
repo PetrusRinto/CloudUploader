@@ -1,5 +1,6 @@
 # Introduction
-Hello world! this is my first ever Cloud/Bash project which is the end of the phase 1 of learntocloud.guide. This project emphasizes on making a script that can upload files to the Google Cloud.
+Hello world! 
+This is my first ever Cloud+Bash project which is the end of phase1 in the learntocloud.guide. This project emphasizes on making a script that can upload files to the Google Cloud.
 I have a 90 day free Google Cloud license which made this possible by test etc.
 This script currently only works on Google Cloud.
 
