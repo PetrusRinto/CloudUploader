@@ -65,6 +65,7 @@ if ! command -v gcloud &> /dev/null; then
     source ~/.bashrc
 else
     echo "gcloud is already installed."
+    exit 1
 fi
 
 
