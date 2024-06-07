@@ -34,15 +34,6 @@ function gcloudinstall {
     source ~/.bashrc
 }
 
-# Creating a gloud authentication function
-function gcloud_auth {
-    gcloud auth activate-service-account --key-file="$GOOGLE_APPLICATION_CREDENTIALS"
-    if [ $? -ne 0 ]; then
-        echo "Failed to authenticate with gcloud"
-        exit 1
-    fi
-    gcloud config set project "$project_id"
-}
 
 # Checking if the user have a gcloud key
 if [ "$gcloudpfrm" == "y" ] || [ "$gcloudpfrm" == "Y" ]; then
@@ -55,6 +46,16 @@ else
     echo "You need to have a Google Cloud key to use this CloudUploader properly, come back later."
     exit 1
 fi
+
+# Creating a gloud authentication function
+function gcloud_auth {
+    gcloud auth activate-service-account --key-file="$GOOGLE_APPLICATION_CREDENTIALS"
+    if [ $? -ne 0 ]; then
+        echo "Failed to authenticate with gcloud"
+        exit 1
+    fi
+    gcloud config set project "$project_id"
+}
 
 # Checking if gcloud is installed and in PATH
 if ! command -v gcloud &> /dev/null; then
