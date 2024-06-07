@@ -77,7 +77,6 @@ else
     gcloud_auth
 fi
 
-gcloud init
 
 echo "All is done! Installing the setup file right now..."
 chmod +x /CloudUploader/setup.sh
