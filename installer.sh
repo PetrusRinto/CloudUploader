@@ -46,7 +46,7 @@ function gcloud_auth {
 
 # Checking if the user have a gcloud key
 if [ "$gcloudpfrm" == "y" ] || [ "$gcloudpfrm" == "Y" ]; then
-    echo 'Great! Enter your gcloud key location. Example "/home/user/gcloud-key.json" (include double-quotes)'
+    echo 'Great! Enter your gcloud key location. Example "/home/user/gcloud-key.json"'
     read -r key
     export GOOGLE_APPLICATION_CREDENTIALS="$key"
     echo "Enter your gcloud project ID"
