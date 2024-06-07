@@ -22,4 +22,5 @@ if [[ ":$PATH:" != *":/usr/local/bin:"* ]]; then
 fi
 
 
-echo "Install complete! You can now use command 'clouduploader'."
+echo "Install complete! Before you can now use command 'clouduploader'."
+echo 'You need to enter "gcloud init" in your terminal to login'
