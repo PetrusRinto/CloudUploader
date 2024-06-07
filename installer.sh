@@ -29,9 +29,10 @@ function gcloudinstall {
         exit 1
     fi
     
-    echo 'export PATH=$PATH:$HOME/google-cloud-sdk/bin' >> ~/.bashrc
+# Adding gcloud to PATH
     export PATH=$PATH:$HOME/google-cloud-sdk/bin
     source ~/.bashrc
+    echo 'export PATH=$PATH:/usr/bin/google-cloud-sdk/bin' >> ~/.bashrc
 }
 
 
